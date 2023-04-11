@@ -1,0 +1,16 @@
+{
+	"name": "nios-scriptable",
+	"version": "1.0.0",
+	"description": "A node package that simulates iOS Scriptable's JS compiler for widgets.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"build": "rimraf lib && tsc"
+	},
+	"author": "SkinnyDevi",
+	"license": "ISC",
+	"devDependencies": {
+		"rimraf": "^5.0.0",
+		"typescript": "^5.0.4"
+	}
+}
