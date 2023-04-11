@@ -1,7 +1,7 @@
 import Notification from "./system/Notifications";
 import Image from "./system/primitive/Image";
 
-type WidgetArgs = {
+export interface WidgetArgs {
   /**
    * @readonly
    * File URLs supplied by a share sheet or a shortcut action.
@@ -96,6 +96,73 @@ type WidgetArgs = {
    * The parameter can be used to differentiate the behavior of multiple widgets.
    */
   widgetParameter?: any;
-};
+}
 
-export const args: WidgetArgs = {};
+/**
+ * Configuration the script runs with.
+ *
+ * Contains information about the configuration the script is currently being run under.
+ */
+export interface ConfigVars {
+  /**
+   * @readonly
+   *
+   * Whether the script is running in the app.
+   */
+  readonly runsInApp: boolean;
+
+  /**
+   * @readonly
+   *
+   * Whether the script is running in the action extension.
+   */
+  readonly runsInActionExtension: boolean;
+
+  /**
+   * @readonly
+   *
+   * Whether the script is running with Siri.
+   */
+  readonly runsWithSiri: boolean;
+
+  /**
+   * @readonly
+   *
+   * Whether the script is running in a widget.
+   */
+  readonly runsInWidget: boolean;
+
+  /**
+   * @readonly
+   *
+   * Whether the script is running in a notification.
+   */
+  readonly runsInNotification: boolean;
+
+  /**
+   * @readonly
+   *
+   * Whether the script was run from the home screen. You can add a script to the home screen from the script settings.
+   */
+  readonly runsFromHomeScreen: boolean;
+
+  /**
+   * @readonly
+   *
+   * The size of the widget the script is running in.
+   *
+   * Possible values are: small, medium, large extraLarge and null. The value is null when the script is not running in a widget.
+   */
+  readonly widgetSize: "small" | "medium" | "large" | "extraLarge" | null;
+}
+
+export const WIDGET_ARGS: WidgetArgs = {};
+export const CONFIG_VARS: ConfigVars = {
+  runsInApp: false,
+  runsInActionExtension: false,
+  runsWithSiri: false,
+  runsInWidget: true,
+  runsInNotification: false,
+  runsFromHomeScreen: false,
+  widgetSize: null,
+};
