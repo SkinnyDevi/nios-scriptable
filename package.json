@@ -4,6 +4,9 @@
 	"description": "A node package that simulates iOS Scriptable's JS compiler for widgets.",
 	"main": "index.js",
 	"type": "module",
+	"files": [
+		"lib/**/*"
+	],
 	"scripts": {
 		"build": "rimraf lib && tsc"
 	},
