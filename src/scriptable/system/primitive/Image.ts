@@ -1,4 +1,5 @@
-import Size from "./Size";
+import Size from "./Size.ts";
+import Data from "./Data.ts";
 
 /**
  * Manages image data.
@@ -6,7 +7,7 @@ import Size from "./Size";
  * Images objects contains image data. APIs in Scriptable that work with images,
  * either by taking an image as input or returning an image, will use this the Image type.
  */
-type ImageType = {
+export type ImageType = {
   /**
    * Size of the image in pixels.
    */
@@ -20,10 +21,7 @@ type ImageType = {
  * either by taking an image as input or returning an image, will use the `ImageType`.
  */
 export default class Image {
-  constructor() {
-    throw new Error("Class is not instantiable.");
-  }
-
+  private constructor() {}
   /**
    * Creates an `Image` from raw data.
    *
@@ -32,9 +30,14 @@ export default class Image {
    * @param data
    * @returns
    */
-  public static fromData(data: any): ImageType | null {
+  public static fromData(data: Data): ImageType | null {
+    if (data === null)
+      throw new Error(
+        "Expected value of type Data but got value of type null."
+      );
+
     return {
-      size: new Size(data.width, data.height),
+      size: new Size(0, 0),
     };
   }
 
@@ -47,6 +50,11 @@ export default class Image {
    * @returns Image loaded from file.
    */
   public static fromFile(filePath: string): ImageType | null {
+    if (filePath === null)
+      throw new Error(
+        "Expected value of type string but got value of type null."
+      );
+
     return {
       size: new Size(0, 0),
     };

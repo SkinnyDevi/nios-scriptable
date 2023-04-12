@@ -1,4 +1,4 @@
-import { args } from "../globalvars";
+import { args } from "../../index";
 
 type NotificationAction = {
   title: string;

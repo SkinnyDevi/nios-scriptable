@@ -1,5 +1,5 @@
-import Notification from "./system/Notifications";
-import Image from "./system/primitive/Image";
+import Notification from "./system/Notifications.ts";
+import { ImageType } from "./system/primitive/Image.ts";
 
 export interface WidgetArgs {
   /**
@@ -30,7 +30,7 @@ export interface WidgetArgs {
    * terminate the process due to memory constraints. In that case, you should enable "Run in App"
    * in the script settings or in the shortcut.
    */
-  images?: Image[];
+  images?: ImageType[];
 
   /**
    * @readonly
