@@ -1,4 +1,4 @@
-import { args } from "../../index";
+import { args } from "../../index.ts";
 
 type NotificationAction = {
   title: string;
