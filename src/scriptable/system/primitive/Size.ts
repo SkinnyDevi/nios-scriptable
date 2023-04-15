@@ -14,6 +14,11 @@ export default class Size {
    */
   height: number;
 
+  /**
+   * Structure representing a size.
+   *
+   * The structure has a width and a height to specify a two-dimensional size.
+   */
   constructor(width: number, height: number) {
     this.width = width;
     this.height = height;

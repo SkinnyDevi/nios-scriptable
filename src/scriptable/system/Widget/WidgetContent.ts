@@ -102,5 +102,5 @@ export default abstract class WidgetContent {
    *
    * A text shown in a widget. You do not create instances of this element directly. Instead you should call `addText()` on an instance of a ListWidget.
    */
-  protected constructor() {}
+  constructor() {}
 }

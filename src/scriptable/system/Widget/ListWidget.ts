@@ -1,6 +1,10 @@
 import LinearGradient from "../LinearGradient.js";
 import Color from "../primitive/Color.js";
 import { ImageType } from "../primitive/Image.js";
+import WidgetDate from "./WidgetDate.js";
+import WidgetImage from "./WidgetImage.js";
+import WidgetSpacer from "./WidgetSpacer.js";
+import WidgetStack from "./WidgetStack.js";
 import WidgetText from "./WidgetText.js";
 
 /**
@@ -67,5 +71,97 @@ export default class ListWidget {
    * Adds a date element to the widget. Use the properties on the returned element to style the date.
    * @param date Date element.
    */
-  public addDate(date: Date) {}
+  public addDate(date: Date) {
+    return new WidgetDate();
+  }
+
+  /**
+   * Add image to the stack.
+   *
+   * Adds an image element to the stack. Use the properties on the returned element to style the image.
+   * @param image Image.
+   * @returns Image element.
+   */
+  public addImage(image: ImageType) {
+    return new WidgetImage();
+  }
+
+  /**
+   * Add spacer.
+   *
+   * Adds a spacer to the stack. This can be used to offset the content horizontally in the stack.
+   * @param length Length of the spacer. Pass null to create a spacer with a flexible length.
+   * @returns Spacer element.
+   */
+  public addSpacer(length: number | null) {
+    const spacer = new WidgetSpacer();
+    if (length !== null) spacer.length = length;
+
+    return spacer;
+  }
+
+  /**
+   * Add stack.
+   *
+   * Adds a stack to the widget. Stacks layout elements horizontally by default.
+   * @returns Stack element.
+   */
+  public addStack() {
+    return new WidgetStack();
+  }
+
+  /**
+   * Set padding.
+   *
+   * Sets the padding on each side of the stack.
+   * @param top Padding on the top edge.
+   * @param leading Padding on the leading edge.
+   * @param bottom Padding on the bottom edge.
+   * @param trailing Padding on the trailing edge.
+   */
+  public setPadding(
+    top: number,
+    leading: number,
+    bottom: number,
+    trailing: number
+  ) {}
+
+  /**
+   * Use the default padding.
+   *
+   * Configure the stack to use the default padding. Any padding previously defined with `setPadding()` will be discarded.
+   */
+  public useDefaultPadding() {}
+
+  /**
+   * Present a preview of the widget.
+   *
+   * The widget is presented in its small size.
+   *
+   * Widgets on the Home screen are updated periodically so while
+   * working on your widget you may want to preview it in the app.
+   */
+  public async presentSmall() {}
+
+  /**
+   * Present a preview of the widget.
+   *
+   * The widget is presented in its medium size.
+   *
+   * Widgets on the Home screen are updated periodically so while
+   * working on your widget you may want to preview it in the app.
+   */
+  public async presentMedium() {}
+
+  /**
+   * Present a preview of the widget.
+   *
+   * The widget is presented in its extra large size.
+   *
+   * Widgets on the Home screen are updated periodically so while
+   * working on your widget you may want to preview it in the app.
+   *
+   * Please be aware that extra large widgets are only available on iPads running iOS 15 and newer.
+   */
+  public async presentExtraLarge() {}
 }
