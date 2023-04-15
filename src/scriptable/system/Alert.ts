@@ -1,4 +1,4 @@
-import TextField from "./TextField.ts";
+import TextField from "./TextField.js";
 
 /**
  * UNFINISHED

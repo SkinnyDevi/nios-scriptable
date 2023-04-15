@@ -1,5 +1,5 @@
-import Notification from "./system/Notifications.ts";
-import { ImageType } from "./system/primitive/Image.ts";
+import Notification from "./system/Notifications.js";
+import { ImageType } from "./system/primitive/Image.js";
 
 export interface WidgetArgs {
   /**

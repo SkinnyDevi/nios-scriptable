@@ -1,4 +1,4 @@
-import { ImageType } from "./Image.ts";
+import { ImageType } from "./Image.js";
 import { Buffer } from "buffer";
 
 /**

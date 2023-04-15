@@ -1,4 +1,4 @@
-import Size from "./primitive/Size.ts";
+import Size from "./primitive/Size.js";
 
 /**
  * Provides information about the device.

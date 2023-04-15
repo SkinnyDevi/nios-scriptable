@@ -1,5 +1,5 @@
-import Calendar from "./Calendar.ts";
-import RecurrenceRule from "./RecurrenceRule.ts";
+import Calendar from "./Calendar.js";
+import RecurrenceRule from "./RecurrenceRule.js";
 
 /**
  * Manages events in calendars.

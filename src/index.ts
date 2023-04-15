@@ -1,4 +1,4 @@
-import { WIDGET_ARGS, CONFIG_VARS } from "./scriptable/globalvars";
+import { WIDGET_ARGS, CONFIG_VARS } from "./scriptable/globalvars.js";
 
 /**
  * Arguments passed to the script.

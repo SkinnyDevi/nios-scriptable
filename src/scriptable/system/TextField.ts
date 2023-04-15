@@ -1,5 +1,5 @@
-import Color from "./primitive/Color";
-import Font from "./primitive/Font";
+import Color from "./primitive/Color.js";
+import Font from "./primitive/Font.js";
 
 /**
  * Text field in an alert.

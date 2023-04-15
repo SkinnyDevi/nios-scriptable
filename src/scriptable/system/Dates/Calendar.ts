@@ -1,4 +1,4 @@
-import Color from "../primitive/Color.ts";
+import Color from "../primitive/Color.js";
 
 /**
  * Holds reminders and events.

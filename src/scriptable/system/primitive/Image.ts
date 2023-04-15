@@ -1,5 +1,5 @@
-import Size from "./Size.ts";
-import Data from "./Data.ts";
+import Size from "./Size.js";
+import Data from "./Data.js";
 
 /**
  * Manages image data.
