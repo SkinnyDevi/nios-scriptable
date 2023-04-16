@@ -153,7 +153,7 @@ export interface ConfigVars {
    *
    * Possible values are: small, medium, large extraLarge and null. The value is null when the script is not running in a widget.
    */
-  readonly widgetSize: "small" | "medium" | "large" | "extraLarge" | null;
+  readonly widgetFamily: "small" | "medium" | "large" | "extraLarge" | null;
 }
 
 export const WIDGET_ARGS: WidgetArgs = {};
@@ -164,5 +164,5 @@ export const CONFIG_VARS: ConfigVars = {
   runsInWidget: true,
   runsInNotification: false,
   runsFromHomeScreen: false,
-  widgetSize: null,
+  widgetFamily: null,
 };

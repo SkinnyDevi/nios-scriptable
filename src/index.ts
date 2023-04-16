@@ -1,5 +1,36 @@
 import { WIDGET_ARGS, CONFIG_VARS } from "./scriptable/globalvars.js";
 
+import Alert from "./scriptable/system/Alert.js";
+import CallbackURL from "./scriptable/system/CallbackURL.js";
+import Device from "./scriptable/system/Device.js";
+import LinearGradient from "./scriptable/system/LinearGradient.js";
+import Notification from "./scriptable/system/Notifications.js";
+import Script from "./scriptable/system/Script.js";
+import TextField from "./scriptable/system/TextField.js";
+import XMLParser from "./scriptable/system/XMLParser.js";
+
+import Color from "./scriptable/system/primitive/Color.js";
+import Data from "./scriptable/system/primitive/Data.js";
+import Font from "./scriptable/system/primitive/Font.js";
+import Image, { ImageType } from "./scriptable/system/primitive/Image.js";
+import Point from "./scriptable/system/primitive/Point.js";
+import Size from "./scriptable/system/primitive/Size.js";
+
+import Calendar from "./scriptable/system/Dates/Calendar.js";
+import CalendarEvent from "./scriptable/system/Dates/CalendarEvent.js";
+import DateFormatter from "./scriptable/system/Dates/DateFormatter.js";
+import DatePicker from "./scriptable/system/Dates/DatePicker.js";
+import RecurrenceRule from "./scriptable/system/Dates/RecurrenceRule.js";
+import RelativeDateTimeFormatter from "./scriptable/system/Dates/RelativeDateTimeFormatter.js";
+
+import ListWidget from "./scriptable/system/Widget/ListWidget.js";
+import WidgetDate from "./scriptable/system/Widget/WidgetDate.js";
+import WidgetImage from "./scriptable/system/Widget/WidgetImage.js";
+import WidgetSpacer from "./scriptable/system/Widget/WidgetSpacer.js";
+import WidgetStack from "./scriptable/system/Widget/WidgetStack.js";
+import WidgetText from "./scriptable/system/Widget/WidgetText.js";
+
+// --- GLOBAL VARIABLES --- //
 /**
  * Arguments passed to the script.
  *
@@ -34,3 +65,40 @@ export const config = CONFIG_VARS;
  * @param name module name to import (i.e moment, fs, path, ...)
  */
 export function importModule(name: string) {}
+
+// --- SYSTEM PACKAGE --- //
+
+// SYSTEM PACKAGES
+export {
+  Alert,
+  CallbackURL,
+  Device,
+  LinearGradient,
+  Notification,
+  Script,
+  TextField,
+  XMLParser,
+};
+
+// SYSTEM PRIMITIVES
+export { Color, Data, Font, Image, Point, Size, ImageType };
+
+// SYSTEM DATES
+export {
+  Calendar,
+  CalendarEvent,
+  DateFormatter,
+  DatePicker,
+  RecurrenceRule,
+  RelativeDateTimeFormatter,
+};
+
+// SYSTEM WIDGET
+export {
+  ListWidget,
+  WidgetDate,
+  WidgetImage,
+  WidgetSpacer,
+  WidgetStack,
+  WidgetText,
+};

@@ -85,7 +85,7 @@ export default class Notification {
    * The Scriptable application will open the URL when the notification is tapped.
    * This can be a URL that uses Scriptables URL scheme, the URL scheme of another application or a website URL.
    */
-  public openUrl?: string;
+  public openURL?: string;
 
   /**
    * Preferred height of the notification.

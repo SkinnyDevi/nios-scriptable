@@ -93,9 +93,9 @@ export default class ListWidget {
    * @param length Length of the spacer. Pass null to create a spacer with a flexible length.
    * @returns Spacer element.
    */
-  public addSpacer(length: number | null) {
+  public addSpacer(length?: number | null) {
     const spacer = new WidgetSpacer();
-    if (length !== null) spacer.length = length;
+    if (length !== null && length) spacer.length = length;
 
     return spacer;
   }
