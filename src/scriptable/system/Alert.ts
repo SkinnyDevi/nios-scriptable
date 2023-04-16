@@ -1,12 +1,10 @@
 import TextField from "./TextField.js";
 
 /**
- * UNFINISHED
- *
  * Presents an alert.
  *
  * Use this to configure an alert presented modally or as a sheet. After configuring the alert,
- * call presentAlert() or presentSheet() to present the alert. The two presentations methods will
+ * call `presentAlert()` or `presentSheet()` to present the alert. The two presentations methods will
  * return a value which carries the index of the action that was selected when fulfilled.
  */
 export default class Alert {

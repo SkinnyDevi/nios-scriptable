@@ -5,6 +5,8 @@ import CallbackURL from "./scriptable/system/CallbackURL.js";
 import Device from "./scriptable/system/Device.js";
 import LinearGradient from "./scriptable/system/LinearGradient.js";
 import Notification from "./scriptable/system/Notifications.js";
+import Request, { RequestMethods } from "./scriptable/system/Request.js";
+import Safari from "./scriptable/system/Safari.js";
 import Script from "./scriptable/system/Script.js";
 import TextField from "./scriptable/system/TextField.js";
 import XMLParser from "./scriptable/system/XMLParser.js";
@@ -75,6 +77,8 @@ export {
   Device,
   LinearGradient,
   Notification,
+  Request,
+  RequestMethods,
   Script,
   TextField,
   XMLParser,
