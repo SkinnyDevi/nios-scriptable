@@ -68,6 +68,27 @@ export const config = CONFIG_VARS;
  */
 export function importModule(name: string) {}
 
+/**
+ * Shorthand for `console.log()`
+ */
+export function log(...message: any[]) {
+  console.log(message);
+}
+
+/**
+ * Shorthand for `console.warn()`
+ */
+export function logWarning(...message: any[]) {
+  console.warn(message);
+}
+
+/**
+ * Shorthand for `console.error()`
+ */
+export function logError(...message: any[]) {
+  console.error(message);
+}
+
 // --- SYSTEM PACKAGE --- //
 
 // SYSTEM PACKAGES
@@ -79,6 +100,7 @@ export {
   Notification,
   Request,
   RequestMethods,
+  Safari,
   Script,
   TextField,
   XMLParser,
