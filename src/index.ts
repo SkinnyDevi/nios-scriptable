@@ -1,4 +1,8 @@
-import { WIDGET_ARGS, CONFIG_VARS } from "./scriptable/globalvars.js";
+import {
+  WIDGET_ARGS,
+  CONFIG_VARS,
+  MODULE_VAR,
+} from "./scriptable/globalvars.js";
 
 import Alert from "./scriptable/system/Alert.js";
 import CallbackURL from "./scriptable/system/CallbackURL.js";
@@ -8,6 +12,8 @@ import DocumentPicker from "./scriptable/system/DocumentPicker.js";
 import FileManager from "./scriptable/system/FileManager.js";
 import Keychain from "./scriptable/system/Keychain.js";
 import LinearGradient from "./scriptable/system/LinearGradient.js";
+import Location from "./scriptable/system/Location.js";
+import Mail from "./scriptable/system/Mail.js";
 import Notification from "./scriptable/system/Notifications.js";
 import Request, { RequestMethods } from "./scriptable/system/Request.js";
 import Safari from "./scriptable/system/Safari.js";
@@ -54,6 +60,30 @@ export const args = WIDGET_ARGS;
  * Contains information about the configuration the script is currently being run under.
  */
 export const config = CONFIG_VARS;
+
+/**
+ * The current module.
+ *
+ * Scriptable treats each file as a module. Consider the following file.
+ *
+ * The circle.js module exports the functions area and circumference. You can add any function or object to the exports of a module to make them available when the module is imported with importModule.
+ *
+ * The file imports the module circle.js which has the following contents.
+ * @example
+ * let circle = importModule('circle')
+ * let r = 2
+ * let area = circle.area(r)
+ * log('Area of circle: ' + area)
+ *
+ * module.exports.area = (r) => {
+ *   return Math.PI * Math.pow(r, 2)
+ * }
+ *
+ * module.exports.circumference = (r) => {
+ *   return 2 * Math.PI * r
+ * }
+ */
+export const module = MODULE_VAR;
 
 /**
  * Modules are imported by specifying the name of the file. For example, to import the file foo.js, call `importModule('foo')`. Including the file extension is optional.
@@ -109,6 +139,8 @@ export {
   FileManager,
   Keychain,
   LinearGradient,
+  Location,
+  Mail,
   Notification,
   Request,
   RequestMethods,
