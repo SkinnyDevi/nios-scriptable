@@ -14,6 +14,7 @@ import Keychain from "./scriptable/system/Keychain.js";
 import LinearGradient from "./scriptable/system/LinearGradient.js";
 import Location from "./scriptable/system/Location.js";
 import Mail from "./scriptable/system/Mail.js";
+import Message from "./scriptable/system/Message.js";
 import Notification from "./scriptable/system/Notifications.js";
 import Pasteboard from "./scriptable/system/Pasteboard.js";
 import Path from "./scriptable/system/Path.js";
@@ -25,6 +26,7 @@ import Script from "./scriptable/system/Script.js";
 import ShareSheet from "./scriptable/system/ShareSheet.js";
 import Speech from "./scriptable/system/Speech.js";
 import TextField from "./scriptable/system/TextField.js";
+import URLScheme from "./scriptable/system/URLScheme.js";
 import XMLParser from "./scriptable/system/XMLParser.js";
 
 import Color from "./scriptable/system/primitive/Color.js";
@@ -147,6 +149,7 @@ export {
   LinearGradient,
   Location,
   Mail,
+  Message,
   Notification,
   Pasteboard,
   Path,
@@ -159,6 +162,7 @@ export {
   ShareSheet,
   Speech,
   TextField,
+  URLScheme,
   XMLParser,
 };
 

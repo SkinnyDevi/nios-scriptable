@@ -1,7 +1,7 @@
 import Notification from "./system/Notifications.js";
 import { ImageType } from "./system/primitive/Image.js";
 
-export interface WidgetArgs {
+export interface ScriptArgs {
   /**
    * @readonly
    * File URLs supplied by a share sheet or a shortcut action.
@@ -211,7 +211,7 @@ export interface ScriptableModule {
 export const MODULE_VAR: ScriptableModule = {
   filename: "",
 };
-export const WIDGET_ARGS: WidgetArgs = {};
+export const WIDGET_ARGS: ScriptArgs = {};
 export const CONFIG_VARS: ConfigVars = {
   runsInApp: false,
   runsInActionExtension: false,

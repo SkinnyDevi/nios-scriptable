@@ -29,7 +29,7 @@
 - ~~ListWidget~~
 - ~~Location~~
 - ~~Mail~~
-- Message
+- ~~Message~~
 - ~~module~~
 - ~~Notification~~
 - ~~Pasteboard~~
@@ -53,7 +53,7 @@
 - UITable
 - UITableCell
 - UITableRow
-- URLScheme
+- ~~URLScheme~~
 - UUID
 - WebView
 - ~~WidgetDate~~

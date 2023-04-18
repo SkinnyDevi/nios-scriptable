@@ -1,7 +1,7 @@
-import { WidgetArgs } from "../globalvars.js";
+import { ScriptArgs } from "../scriptable/globalvars.js";
 
 interface EnvironmentSetupVariables {
-  args: WidgetArgs;
+  args: ScriptArgs;
 }
 
 /**
