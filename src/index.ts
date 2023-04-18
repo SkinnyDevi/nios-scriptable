@@ -20,6 +20,10 @@ import Image, { ImageType } from "./scriptable/system/primitive/Image.js";
 import Point from "./scriptable/system/primitive/Point.js";
 import Size from "./scriptable/system/primitive/Size.js";
 
+import Contact from "./scriptable/system/Contacts/Contact.js";
+import ContactsContainer from "./scriptable/system/Contacts/ContactsContainer.js";
+import ContactsGroup from "./scriptable/system/Contacts/ContactsGroup.js";
+
 import Calendar from "./scriptable/system/Dates/Calendar.js";
 import CalendarEvent from "./scriptable/system/Dates/CalendarEvent.js";
 import DateFormatter from "./scriptable/system/Dates/DateFormatter.js";
@@ -27,12 +31,12 @@ import DatePicker from "./scriptable/system/Dates/DatePicker.js";
 import RecurrenceRule from "./scriptable/system/Dates/RecurrenceRule.js";
 import RelativeDateTimeFormatter from "./scriptable/system/Dates/RelativeDateTimeFormatter.js";
 
-import ListWidget from "./scriptable/system/Widget/ListWidget.js";
-import WidgetDate from "./scriptable/system/Widget/WidgetDate.js";
-import WidgetImage from "./scriptable/system/Widget/WidgetImage.js";
-import WidgetSpacer from "./scriptable/system/Widget/WidgetSpacer.js";
-import WidgetStack from "./scriptable/system/Widget/WidgetStack.js";
-import WidgetText from "./scriptable/system/Widget/WidgetText.js";
+import ListWidget from "./scriptable/system/Widgets/ListWidget.js";
+import WidgetDate from "./scriptable/system/Widgets/WidgetDate.js";
+import WidgetImage from "./scriptable/system/Widgets/WidgetImage.js";
+import WidgetSpacer from "./scriptable/system/Widgets/WidgetSpacer.js";
+import WidgetStack from "./scriptable/system/Widgets/WidgetStack.js";
+import WidgetText from "./scriptable/system/Widgets/WidgetText.js";
 
 // --- GLOBAL VARIABLES --- //
 /**
@@ -112,6 +116,9 @@ export {
 
 // SYSTEM PRIMITIVES
 export { Color, Data, Font, Image, Point, Size, ImageType };
+
+// SYSTEM CONTACTS
+export { Contact, ContactsContainer, ContactsGroup };
 
 // SYSTEM DATES
 export {
