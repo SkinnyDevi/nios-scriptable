@@ -60,6 +60,17 @@ export default class ListWidget {
   public refreshAfterDate: Date | null = null;
 
   /**
+   * Widget showing a list of elements.
+   *
+   * A widget showing a list of elements. Pass the widget to Script.setWidget() display it on your Home screen.
+   *
+   * Be aware that the widget will refresh periodically and the rate at which the widget refreshes is largely determined by the operating system.
+   *
+   * Also note that there are memory limitations when running a script in a widget. When using too much memory the widget will crash and not render correctly.
+   */
+  constructor() {}
+
+  /**
    * Adds a text element to the widget. Use the properties on the returned element to style the text.
    * @param text Text element.
    */
