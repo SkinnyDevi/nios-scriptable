@@ -36,7 +36,7 @@
 - ~~Path~~
 - Photos
 - ~~Point~~
-- QuickLook
+- ~~QuickLook~~
 - ~~Rect~~
 - ~~RecurrenceRule~~
 - ~~RelativeDateTimeFormatter~~
@@ -45,7 +45,7 @@
 - ~~Safari~~
 - ~~Script~~
 - SFSymbol
-- ShareSheet
+- ~~ShareSheet~~
 - ~~Size~~
 - Speech
 - ~~TextField~~
