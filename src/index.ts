@@ -5,6 +5,7 @@ import CallbackURL from "./scriptable/system/CallbackURL.js";
 import Device from "./scriptable/system/Device.js";
 import Dictation from "./scriptable/system/Dictation.js";
 import FileManager from "./scriptable/system/FileManager.js";
+import Keychain from "./scriptable/system/Keychain.js";
 import LinearGradient from "./scriptable/system/LinearGradient.js";
 import Notification from "./scriptable/system/Notifications.js";
 import Request, { RequestMethods } from "./scriptable/system/Request.js";
@@ -104,6 +105,7 @@ export {
   Device,
   Dictation,
   FileManager,
+  Keychain,
   LinearGradient,
   Notification,
   Request,
