@@ -15,6 +15,7 @@ import LinearGradient from "./scriptable/system/LinearGradient.js";
 import Location from "./scriptable/system/Location.js";
 import Mail from "./scriptable/system/Mail.js";
 import Notification from "./scriptable/system/Notifications.js";
+import Pasteboard from "./scriptable/system/Pasteboard.js";
 import Request, { RequestMethods } from "./scriptable/system/Request.js";
 import Safari from "./scriptable/system/Safari.js";
 import Script from "./scriptable/system/Script.js";
@@ -142,6 +143,7 @@ export {
   Location,
   Mail,
   Notification,
+  Pasteboard,
   Request,
   RequestMethods,
   Safari,
