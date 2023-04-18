@@ -4,6 +4,7 @@ import Alert from "./scriptable/system/Alert.js";
 import CallbackURL from "./scriptable/system/CallbackURL.js";
 import Device from "./scriptable/system/Device.js";
 import Dictation from "./scriptable/system/Dictation.js";
+import DocumentPicker from "./scriptable/system/DocumentPicker.js";
 import FileManager from "./scriptable/system/FileManager.js";
 import Keychain from "./scriptable/system/Keychain.js";
 import LinearGradient from "./scriptable/system/LinearGradient.js";
@@ -104,6 +105,7 @@ export {
   CallbackURL,
   Device,
   Dictation,
+  DocumentPicker,
   FileManager,
   Keychain,
   LinearGradient,
