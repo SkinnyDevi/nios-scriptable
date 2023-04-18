@@ -23,6 +23,7 @@ import Request, { RequestMethods } from "./scriptable/system/Request.js";
 import Safari from "./scriptable/system/Safari.js";
 import Script from "./scriptable/system/Script.js";
 import ShareSheet from "./scriptable/system/ShareSheet.js";
+import Speech from "./scriptable/system/Speech.js";
 import TextField from "./scriptable/system/TextField.js";
 import XMLParser from "./scriptable/system/XMLParser.js";
 
@@ -156,6 +157,7 @@ export {
   Safari,
   Script,
   ShareSheet,
+  Speech,
   TextField,
   XMLParser,
 };

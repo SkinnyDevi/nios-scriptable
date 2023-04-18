@@ -47,7 +47,7 @@
 - SFSymbol
 - ~~ShareSheet~~
 - ~~Size~~
-- Speech
+- ~~Speech~~
 - ~~TextField~~
 - Timer
 - UITable
