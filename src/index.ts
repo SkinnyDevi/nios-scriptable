@@ -3,6 +3,8 @@ import { WIDGET_ARGS, CONFIG_VARS } from "./scriptable/globalvars.js";
 import Alert from "./scriptable/system/Alert.js";
 import CallbackURL from "./scriptable/system/CallbackURL.js";
 import Device from "./scriptable/system/Device.js";
+import Dictation from "./scriptable/system/Dictation.js";
+import FileManager from "./scriptable/system/FileManager.js";
 import LinearGradient from "./scriptable/system/LinearGradient.js";
 import Notification from "./scriptable/system/Notifications.js";
 import Request, { RequestMethods } from "./scriptable/system/Request.js";
@@ -72,21 +74,21 @@ export function importModule(name: string) {}
  * Shorthand for `console.log()`
  */
 export function log(...message: any[]) {
-  console.log(message);
+  console.log("[LOG]:", message);
 }
 
 /**
  * Shorthand for `console.warn()`
  */
 export function logWarning(...message: any[]) {
-  console.warn(message);
+  console.warn(["WARN"], message);
 }
 
 /**
  * Shorthand for `console.error()`
  */
 export function logError(...message: any[]) {
-  console.error(message);
+  console.error(["ERROR"], message);
 }
 
 // --- SYSTEM PACKAGE --- //
@@ -96,6 +98,8 @@ export {
   Alert,
   CallbackURL,
   Device,
+  Dictation,
+  FileManager,
   LinearGradient,
   Notification,
   Request,
