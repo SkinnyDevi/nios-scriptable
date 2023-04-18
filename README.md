@@ -33,11 +33,11 @@
 - ~~module~~
 - ~~Notification~~
 - ~~Pasteboard~~
-- Path
+- ~~Path~~
 - Photos
 - ~~Point~~
 - QuickLook
-- Rect
+- ~~Rect~~
 - ~~RecurrenceRule~~
 - ~~RelativeDateTimeFormatter~~
 - Reminder

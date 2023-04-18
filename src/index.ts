@@ -16,6 +16,8 @@ import Location from "./scriptable/system/Location.js";
 import Mail from "./scriptable/system/Mail.js";
 import Notification from "./scriptable/system/Notifications.js";
 import Pasteboard from "./scriptable/system/Pasteboard.js";
+import Path from "./scriptable/system/Path.js";
+import Rect from "./scriptable/system/Rect.js";
 import Request, { RequestMethods } from "./scriptable/system/Request.js";
 import Safari from "./scriptable/system/Safari.js";
 import Script from "./scriptable/system/Script.js";
@@ -144,6 +146,8 @@ export {
   Mail,
   Notification,
   Pasteboard,
+  Path,
+  Rect,
   Request,
   RequestMethods,
   Safari,
