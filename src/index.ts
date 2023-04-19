@@ -49,6 +49,10 @@ import DatePicker from "./scriptable/system/Dates/DatePicker.js";
 import RecurrenceRule from "./scriptable/system/Dates/RecurrenceRule.js";
 import RelativeDateTimeFormatter from "./scriptable/system/Dates/RelativeDateTimeFormatter.js";
 
+import UITable from "./scriptable/system/UI/UITable.js";
+import UITableCell from "./scriptable/system/UI/UITableCell.js";
+import UITableRow from "./scriptable/system/UI/UITableRow.js";
+
 import ListWidget from "./scriptable/system/Widgets/ListWidget.js";
 import WidgetDate from "./scriptable/system/Widgets/WidgetDate.js";
 import WidgetImage from "./scriptable/system/Widgets/WidgetImage.js";
@@ -185,6 +189,9 @@ export {
   RecurrenceRule,
   RelativeDateTimeFormatter,
 };
+
+// SYSTEM UI
+export { UITable, UITableCell, UITableRow };
 
 // SYSTEM WIDGET
 export {
