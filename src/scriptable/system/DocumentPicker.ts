@@ -10,6 +10,8 @@ import { ImageType } from "./primitive/Image.js";
  * Use the FileManager to read the content of these files. When exporting a document, the picker will ask you to select a destination to store the document.
  */
 export default class DocumentPicker {
+  private constructor() {}
+
   /**
    * Presents a document picker for opening a document from the Files app. It is up to the user to specify which types of files can be opened.
    *

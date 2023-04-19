@@ -8,6 +8,8 @@
  * change this later from the system settings.
  */
 export default class Location {
+  private constructor() {}
+
   /**
    * Fetches your location.
    *

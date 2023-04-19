@@ -6,6 +6,8 @@
  * interface when you are finished dictating.
  */
 export default class Dictation {
+  private constructor() {}
+
   /**
    * Presents an interface that shows the dictated string. Press "Done" when you are done dictating the text.
    * @param locale Optional string identifier that specifies the language to dictate in. E.g. "en" for English,

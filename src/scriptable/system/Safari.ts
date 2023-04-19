@@ -4,6 +4,7 @@
  * Presents a website either in-app or by leaving the app an opening the Safari app.
  */
 export default class Safari {
+  private constructor() {}
   /**
    * Presents a website in-app.
    *

@@ -6,6 +6,7 @@
  * Available activites vary depending on the provided items.
  */
 export default class ShareSheet {
+  private constructor() {}
   /**
    * Presents the activity picker.
    *

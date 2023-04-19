@@ -11,6 +11,8 @@ import Size from "./primitive/Size.js";
  * Please remember that in Scriptable you must use `Device.name()` to get the Device name.
  */
 export default class Device {
+  private constructor() {}
+
   /**
    * Name of the operating system.
    */

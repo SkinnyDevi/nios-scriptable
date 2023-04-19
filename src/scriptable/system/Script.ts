@@ -9,6 +9,7 @@
  * Please remember that in Scriptable you must use `Script.name()` to get the Script name.
  */
 export default class Script {
+  private constructor() {}
   /**
    * Call this function to inform the system that the script has completed running.
    *

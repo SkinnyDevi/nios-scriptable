@@ -8,6 +8,13 @@ import Point from "./primitive/Point.js";
  */
 export default class LinearGradient {
   /**
+   * Linear gradient.
+   *
+   * A linear gradient to be used in a widget.
+   */
+  constructor() {}
+
+  /**
    * Colors of the gradient.
    *
    * The array of colors should include the same amount of elements as the gradients `locations` property.

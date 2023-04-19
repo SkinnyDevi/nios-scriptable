@@ -20,6 +20,7 @@
  * In addition to the `scriptable://` scheme, you can also perform the above actions using the universal link `open.scriptable.app`, e.g. `https://open.scriptable.app/run/Example`
  */
 export default class URLScheme {
+  private constructor() {}
   /**
    * URL for opening the script.
    *

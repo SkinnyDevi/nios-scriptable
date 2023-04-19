@@ -6,6 +6,8 @@
  * You can then later use the `get()` method to retrieve the value.
  */
 export default class Keychain {
+  private constructor() {}
+
   /**
    * Check if keychain contains a key.
    *

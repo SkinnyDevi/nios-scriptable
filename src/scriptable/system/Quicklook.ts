@@ -5,6 +5,8 @@
  * The quick look will try to choose the best suited presentation of the item.
  */
 export default class Quicklook {
+  private constructor() {}
+
   /**
    * Presents the item.
    *

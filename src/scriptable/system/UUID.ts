@@ -4,6 +4,7 @@
  * A universally unique value that can be used to identify items.
  */
 export default class UUID {
+  private constructor() {}
   /**
    * Get string value.
    *

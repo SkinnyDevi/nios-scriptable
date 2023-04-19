@@ -74,7 +74,7 @@ export default class UITableRow {
    * @returns Constructed cell.
    */
   public addText(title: string, subtitle: string) {
-    return new UITableCell();
+    return UITableCell.text(title, subtitle);
   }
 
   /**
@@ -83,7 +83,7 @@ export default class UITableRow {
    * @returns Cosntructed cell.
    */
   public addImage(image: ImageType) {
-    return new UITableCell();
+    return UITableCell.image(image);
   }
 
   /**
@@ -92,7 +92,7 @@ export default class UITableRow {
    * @returns Cosntructed cell.
    */
   public addImageAtURL(url: string) {
-    return new UITableCell();
+    return UITableCell.imageAtURL(url);
   }
 
   /**
@@ -101,6 +101,6 @@ export default class UITableRow {
    * @returns Cosntructed cell.
    */
   public addButton(title: string) {
-    return new UITableCell();
+    return UITableCell.button(title);
   }
 }

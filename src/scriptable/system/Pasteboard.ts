@@ -6,6 +6,8 @@ import Image from "./primitive/Image.js";
  * Copy and paste strings and images to and from the pasteboard.
  */
 export default class Pasteboard {
+  private constructor() {}
+
   /**
    * Copies a string to the pasteboard.
    * @param string The string to copy to the pasteboard.
