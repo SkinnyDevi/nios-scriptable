@@ -44,7 +44,7 @@
 - ~~Request~~
 - ~~Safari~~
 - ~~Script~~
-- SFSymbol
+- ~~SFSymbol~~
 - ~~ShareSheet~~
 - ~~Size~~
 - ~~Speech~~
