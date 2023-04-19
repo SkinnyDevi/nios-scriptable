@@ -26,7 +26,9 @@ import Script from "./scriptable/system/Script.js";
 import ShareSheet from "./scriptable/system/ShareSheet.js";
 import Speech from "./scriptable/system/Speech.js";
 import TextField from "./scriptable/system/TextField.js";
+import Timer from "./scriptable/system/Timer.js";
 import URLScheme from "./scriptable/system/URLScheme.js";
+import UUID from "./scriptable/system/UUID.js";
 import XMLParser from "./scriptable/system/XMLParser.js";
 
 import Color from "./scriptable/system/primitive/Color.js";
@@ -162,7 +164,9 @@ export {
   ShareSheet,
   Speech,
   TextField,
+  Timer,
   URLScheme,
+  UUID,
   XMLParser,
 };
 

@@ -49,12 +49,12 @@
 - ~~Size~~
 - ~~Speech~~
 - ~~TextField~~
-- Timer
+- ~~Timer~~
 - UITable
 - UITableCell
 - UITableRow
 - ~~URLScheme~~
-- UUID
+- ~~UUID~~
 - WebView
 - ~~WidgetDate~~
 - ~~WidgetImage~~
