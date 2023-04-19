@@ -2,8 +2,22 @@
 	"name": "nios-scriptable",
 	"version": "1.0.0",
 	"description": "A node package that simulates iOS Scriptable's JS compiler for widgets.",
-	"main": "index.js",
+	"main": "src/index.js",
 	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./lib/index.d.ts",
+				"default": "./lib/index.js"
+			}
+		},
+		"./lib/nios-wrapper": {
+			"import": {
+				"types": "./lib/nios-wrapper/index.d.ts",
+				"default": "./lib/nios-wrapper/index.js"
+			}
+		}
+	},
 	"files": [
 		"lib/**/*"
 	],

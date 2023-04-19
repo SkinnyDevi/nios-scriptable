@@ -134,12 +134,38 @@ export class FakeDirectory {
   }
 }
 
+/**
+ * A fake file structure to use for a fake file system.
+ */
 export class FakeFile {
+  /**
+   * File name.
+   */
   public readonly name: string;
+
+  /**
+   * File extension.
+   */
   public readonly extension: string;
-  private tags: string[] = [];
+
+  /**
+   * File tags. Tags are required to be unique.
+   */
+  public readonly tags: string[] = [];
+
+  /**
+   * File extended attributes.
+   */
   private extattrs: { [key: string]: string }[] = [];
+
+  /**
+   * The file's Uniform Type Identifier.
+   */
   private uti: string = "";
+
+  /**
+   * Any bookmarks added to the file.
+   */
   private bookmarks: string[] = [];
 
   constructor(name: string, extension: string) {
@@ -164,13 +190,5 @@ export class FakeFile {
    */
   public removeTag(tag: string) {
     if (this.tags.includes(tag)) this.tags.splice(this.tags.indexOf(tag), 1);
-  }
-
-  /**
-   * Reads all tags from a file.
-   * @returns Read tags.
-   */
-  public allTags() {
-    return this.tags;
   }
 }

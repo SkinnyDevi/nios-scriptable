@@ -125,21 +125,21 @@ export function importModule(name: string) {}
  * Shorthand for `console.log()`
  */
 export function log(...message: any[]) {
-  console.log("[LOG]:", message);
+  console.log(`[LOG]: ${message}`);
 }
 
 /**
  * Shorthand for `console.warn()`
  */
 export function logWarning(...message: any[]) {
-  console.warn(["WARN"], message);
+  console.warn(`[WARN]: ${message}`);
 }
 
 /**
  * Shorthand for `console.error()`
  */
 export function logError(...message: any[]) {
-  console.error(["ERROR"], message);
+  console.error(`[ERROR]: ${message}`);
 }
 
 // --- SYSTEM PACKAGE --- //

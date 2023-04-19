@@ -109,42 +109,42 @@ export interface ConfigVars {
    *
    * Whether the script is running in the app.
    */
-  readonly runsInApp: boolean;
+  readonly runsInApp?: boolean;
 
   /**
    * @readonly
    *
    * Whether the script is running in the action extension.
    */
-  readonly runsInActionExtension: boolean;
+  readonly runsInActionExtension?: boolean;
 
   /**
    * @readonly
    *
    * Whether the script is running with Siri.
    */
-  readonly runsWithSiri: boolean;
+  readonly runsWithSiri?: boolean;
 
   /**
    * @readonly
    *
    * Whether the script is running in a widget.
    */
-  readonly runsInWidget: boolean;
+  readonly runsInWidget?: boolean;
 
   /**
    * @readonly
    *
    * Whether the script is running in a notification.
    */
-  readonly runsInNotification: boolean;
+  readonly runsInNotification?: boolean;
 
   /**
    * @readonly
    *
    * Whether the script was run from the home screen. You can add a script to the home screen from the script settings.
    */
-  readonly runsFromHomeScreen: boolean;
+  readonly runsFromHomeScreen?: boolean;
 
   /**
    * @readonly
@@ -213,11 +213,5 @@ export const MODULE_VAR: ScriptableModule = {
 };
 export const WIDGET_ARGS: ScriptArgs = {};
 export const CONFIG_VARS: ConfigVars = {
-  runsInApp: false,
-  runsInActionExtension: false,
-  runsWithSiri: false,
-  runsInWidget: true,
-  runsInNotification: false,
-  runsFromHomeScreen: false,
   widgetFamily: null,
 };
