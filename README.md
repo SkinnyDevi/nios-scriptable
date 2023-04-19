@@ -50,9 +50,9 @@
 - ~~Speech~~
 - ~~TextField~~
 - ~~Timer~~
-- UITable
-- UITableCell
-- UITableRow
+- ~~UITable~~
+- ~~UITableCell~~
+- ~~UITableRow~~
 - ~~URLScheme~~
 - ~~UUID~~
 - WebView
