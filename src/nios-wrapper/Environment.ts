@@ -1,7 +1,11 @@
-import { ScriptArgs } from "../scriptable/globalvars.js";
+import { ConfigVars, ScriptArgs } from "../scriptable/globalvars.js";
+import FilesystemWrapper from "./Wrappers/FilesystemWrapper.js";
 
-interface EnvironmentSetupVariables {
+export interface EnvironmentSetupVariables {
   args: ScriptArgs;
+  config: ConfigVars;
+  filesystem?: FilesystemWrapper;
+  keychain: any[];
 }
 
 /**
@@ -9,11 +13,17 @@ interface EnvironmentSetupVariables {
  *
  * Use helpers to define complex data structures (files, contacts...)
  */
-export default class Environment {
-  public readonly setup;
+export default class NIOSEnvironment {
+  public readonly args: ScriptArgs;
+  public readonly config: ConfigVars;
+  public readonly filesystem: FilesystemWrapper;
+  public readonly keychain?: any[];
 
   constructor(setup: EnvironmentSetupVariables) {
-    this.setup = setup;
+    this.args = setup.args;
+    this.config = setup.config;
+    if (setup.filesystem) this.filesystem = setup.filesystem;
+    else this.filesystem = FilesystemWrapper.basicFilesystem();
   }
 
   /**
