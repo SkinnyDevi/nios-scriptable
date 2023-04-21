@@ -132,6 +132,19 @@ export class FakeDirectory {
   public addSubdirectories(dirs: FakeDirectory[]) {
     for (let d of dirs) this.addSubdirectory(d);
   }
+
+  /**
+   * Lists content of directory.
+   *
+   * Lists all the contents in the specified directory. The returned array contains filenames to all files and directories in the specified directory.
+   * @returns Names of all the files and directories in the specified directory.
+   */
+  public listContents() {
+    const contents: string[] = [];
+    this.subdirectories.forEach((s) => contents.push(s.name));
+    this.files.forEach((f) => contents.push(f.name));
+    return contents;
+  }
 }
 
 /**
@@ -151,12 +164,12 @@ export class FakeFile {
   /**
    * File tags. Tags are required to be unique.
    */
-  public readonly tags: string[] = [];
+  private tags: string[] = [];
 
   /**
    * File extended attributes.
    */
-  private extattrs: { [key: string]: string }[] = [];
+  private extattrs: Map<string, string>;
 
   /**
    * The file's Uniform Type Identifier.
@@ -171,6 +184,7 @@ export class FakeFile {
   constructor(name: string, extension: string) {
     this.name = name;
     this.extension = extension;
+    this.extattrs = new Map<string, string>();
   }
 
   /**
@@ -190,5 +204,51 @@ export class FakeFile {
    */
   public removeTag(tag: string) {
     if (this.tags.includes(tag)) this.tags.splice(this.tags.indexOf(tag), 1);
+  }
+
+  /**
+   * Gets all the tags attached to this file.
+   * @returns Tags with the file.
+   */
+  public allTags() {
+    return Array.from(this.tags);
+  }
+
+  /**
+   * Gets the value of the requested name.
+   * @param name Name of the Attribute.
+   * @returns Value of the attribute or null if the attribute doesn't exist.
+   */
+  public readExtendedAttribute(name: string) {
+    const attr = this.extattrs.get(name);
+    if (attr) return attr;
+    return null;
+  }
+
+  /**
+   * Reads all extended attributes attached to the file.
+   * @returns List of all names of the extended attributes.
+   */
+  public allExtendedAttributes() {
+    return Array.from(this.extattrs.keys());
+  }
+
+  /**
+   * Writes a new Extended Attribute to the file.
+   * @param value Value of the attribute.
+   * @param name Name of the attribute.
+   */
+  public writeExtendedAttribute(value: string, name: string) {
+    this.extattrs.set(name, value);
+  }
+
+  /**
+   * Gets the UTI of the specified file.
+   *
+   * The Uniform Type Identifier is a string that identifies the type of file.
+   * @returns The UTI of the file.
+   */
+  public getUTI() {
+    return this.uti;
   }
 }
