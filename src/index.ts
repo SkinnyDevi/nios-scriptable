@@ -2,6 +2,9 @@ import {
   WIDGET_ARGS,
   CONFIG_VARS,
   MODULE_VAR,
+  ScriptArgs,
+  ConfigVars,
+  ScriptableModule,
 } from "./scriptable/globalvars.js";
 
 import Alert from "./scriptable/system/Alert.js";
@@ -68,6 +71,7 @@ import WidgetText from "./scriptable/system/Widgets/WidgetText.js";
  * Arguments are passed to the script when the script is executed from a share sheet. You can specify the types of arguments a script supports from the script settings.
  */
 export const args = WIDGET_ARGS;
+export { ScriptArgs };
 
 /**
  * Configuration the script runs with.
@@ -75,6 +79,7 @@ export const args = WIDGET_ARGS;
  * Contains information about the configuration the script is currently being run under.
  */
 export const config = CONFIG_VARS;
+export { ConfigVars };
 
 /**
  * The current module.
@@ -99,6 +104,7 @@ export const config = CONFIG_VARS;
  * }
  */
 export const module = MODULE_VAR;
+export { ScriptableModule };
 
 /**
  * Modules are imported by specifying the name of the file. For example, to import the file foo.js, call `importModule('foo')`. Including the file extension is optional.

@@ -1,9 +1,9 @@
 {
 	"name": "nios-scriptable",
-	"version": "0.9.1",
+	"version": "0.9.15",
 	"description": "A node package that forces types on iOS Scriptable's JS files for better coding.",
+	"main": "",
 	"types": "./lib/index.d.ts",
-	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/SkinnyDevi/nios-scriptable"
@@ -17,12 +17,6 @@
 			}
 		}
 	},
-	"files": [
-		"lib/**/*",
-		"package.json",
-		"README.md",
-		""
-	],
 	"scripts": {
 		"build": "rimraf lib && tsc"
 	},
@@ -37,6 +31,7 @@
 		"typescript": "^5.0.4"
 	},
 	"dependencies": {
+		"@types/chrome": "^0.0.233",
 		"buffer": "^6.0.3"
 	},
 	"directories": {
