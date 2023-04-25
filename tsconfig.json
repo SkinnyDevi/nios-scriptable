@@ -7,6 +7,6 @@
     "strict": true,
     "moduleResolution": "nodenext"
   },
-  "include": ["src"],
+  "include": ["src", "wrapper/nios-wrapper"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
