@@ -5,7 +5,8 @@
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "emitDeclarationOnly": true
   },
   "include": ["src", "wrapper/nios-wrapper"],
   "exclude": ["node_modules", "**/__tests__/*"]
