@@ -5,6 +5,8 @@ You may use ```.ts``` files and compile them using TypeScript for easy conversio
 Please note that when using this method of development, it is essential to remove the imports from this library for correct
 execution in the Scriptable app itself.
 
+All credits of documentation and further coding goes to [Simon Støvring](https://twitter.com/simonbs).
+
 ## Current List Of Completion
 - ~~Alert~~
 - ~~args~~
