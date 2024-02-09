@@ -150,6 +150,35 @@ export function logError(...message: any[]) {
 
 // --- SYSTEM PACKAGE --- //
 
+// SYSTEM CONTACTS
+export { Contact, ContactsContainer, ContactsGroup };
+
+// SYSTEM DATES
+export {
+  Calendar,
+  CalendarEvent,
+  DateFormatter,
+  DatePicker,
+  RecurrenceRule,
+  RelativeDateTimeFormatter,
+};
+
+// SYSTEM PRIMITIVES
+export { Color, Data, Font, Image, Point, Size, ImageType };
+
+// SYSTEM UI
+export { UITable, UITableCell, UITableRow };
+
+// SYSTEM WIDGET
+export {
+  ListWidget,
+  WidgetDate,
+  WidgetImage,
+  WidgetSpacer,
+  WidgetStack,
+  WidgetText,
+};
+
 // SYSTEM PACKAGES
 export {
   Alert,
@@ -180,33 +209,4 @@ export {
   URLScheme,
   UUID,
   XMLParser,
-};
-
-// SYSTEM PRIMITIVES
-export { Color, Data, Font, Image, Point, Size, ImageType };
-
-// SYSTEM CONTACTS
-export { Contact, ContactsContainer, ContactsGroup };
-
-// SYSTEM DATES
-export {
-  Calendar,
-  CalendarEvent,
-  DateFormatter,
-  DatePicker,
-  RecurrenceRule,
-  RelativeDateTimeFormatter,
-};
-
-// SYSTEM UI
-export { UITable, UITableCell, UITableRow };
-
-// SYSTEM WIDGET
-export {
-  ListWidget,
-  WidgetDate,
-  WidgetImage,
-  WidgetSpacer,
-  WidgetStack,
-  WidgetText,
 };
