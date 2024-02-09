@@ -16,7 +16,7 @@ All credits of documentation and further coding goes to [Simon Støvring](https:
 - ~~Color~~
 - ~~config~~
 - ~~console~~
-- Contact
+- ~~Contact~~
 - ~~ContactsContainer~~
 - ~~ContactsGroup~~
 - ~~Data~~
