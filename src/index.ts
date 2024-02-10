@@ -42,6 +42,7 @@ import Message from "./scriptable/system/Message.js";
 import Notification from "./scriptable/system/Notifications.js";
 import Pasteboard from "./scriptable/system/Pasteboard.js";
 import Path from "./scriptable/system/Path.js";
+import Photos from "./scriptable/system/Photos.js";
 import Quicklook from "./scriptable/system/Quicklook.js";
 import Rect from "./scriptable/system/Rect.js";
 import Reminder from "./scriptable/system/Reminder.js";
@@ -199,6 +200,7 @@ export {
   Notification,
   Pasteboard,
   Path,
+  Photos,
   Quicklook,
   Rect,
   Reminder,
