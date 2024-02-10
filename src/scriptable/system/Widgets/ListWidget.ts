@@ -167,12 +167,10 @@ export default class ListWidget {
   /**
    * Present a preview of the widget.
    *
-   * The widget is presented in its extra large size.
+   * The widget is presented in its large size.
    *
    * Widgets on the Home screen are updated periodically so while
    * working on your widget you may want to preview it in the app.
-   *
-   * Please be aware that extra large widgets are only available on iPads running iOS 15 and newer.
    */
-  public async presentExtraLarge() {}
+  public async presentLarge() {}
 }

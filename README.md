@@ -6,3 +6,6 @@ Please note that when using this method of development, it is essential to remov
 execution in the Scriptable app itself.
 
 All credits of documentation and further coding goes to [Simon Støvring](https://twitter.com/simonbs).
+
+## Example project
+You can find an example project [in the following repo](https://github.com/SkinnyDevi/nios-scriptable-project-example).

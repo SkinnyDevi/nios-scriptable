@@ -1,6 +1,6 @@
 {
 	"name": "nios-scriptable",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A node package that forces types on iOS Scriptable's JS files for better coding.",
 	"main": "",
 	"types": "./lib/index.d.ts",
