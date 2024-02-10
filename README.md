@@ -8,6 +8,5 @@ execution in the Scriptable app itself.
 All credits of documentation and further coding goes to [Simon Støvring](https://twitter.com/simonbs).
 
 ## Pending classes of implementation
-- DrawContext
 - Photos
 - Reminder
