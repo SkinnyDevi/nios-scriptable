@@ -9,4 +9,3 @@ All credits of documentation and further coding goes to [Simon Støvring](https:
 
 ## Pending classes of implementation
 - Photos
-- Reminder
